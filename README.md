@@ -9,4 +9,6 @@ download_cl1024_images - 下载某社区的图片
 
 requests
 pillow
+pyinstaller
+tkinter
 
