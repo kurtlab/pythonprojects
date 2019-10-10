@@ -1,4 +1,5 @@
-#!/usr/bin/env python3# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
+#  -*- coding: utf-8 -*-
 
 import tkinter as tk
 from tkinter import messagebox
