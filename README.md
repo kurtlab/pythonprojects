@@ -12,5 +12,7 @@ pillow
 pyinstaller
 tkinter
 
-####2019年10月11日
+###2019年10月11日
+
 添加使用python玩gta5的代码；不断改善
+
