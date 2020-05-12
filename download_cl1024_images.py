@@ -91,6 +91,7 @@ class DownloadFrame(BasicFrame):
         tk.Label(self.root,   text='---代理功能更新中---').grid(row=row, column=1)
 
 
+
     @thread_run
     def downloadnow(self):
         _input = self.entry.get().replace(' ', '')
@@ -116,7 +117,13 @@ class DownloadFrame(BasicFrame):
             result.encoding = 'gbk'
             # pic_url = re.findall('"objURL":"(.*?)",', result.text, re.S)
             pic_url = re.findall("data-src='(.*?)'", result.text, re.S)
-            print(pic_url)
+
+            if pic_url:
+                pic_url
+                print(pic_url)
+            else:
+                pic_url = re.findall("ess-data='(.*?)'", result.text, re.S)
+                print(pic_url)
             titles = re.findall('<h4>(.+)</h4>',  result.text)
             print(titles)
             title = titles[0]
